@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iterNArrays</title>
+  <script src="./index.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+          crossorigin="anonymous">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous" />
+  
+  <style>
+    .col {
+      position: relative;
+    }
+    .close-input {
+        position: absolute;
+        top: 1px;
+        right: 13px;
+        opacity: 1;
+    }
+  </style>
+
+  <script>
+    $(() => jqueryFunctions());
+  </script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>iterNArrays</h1>
+      
+    <div id="arrs">
+      <div id="div-arr_1">
+        <p>
+          Add elements to the array
+          <input type='button' class="btn-sm btn btn-light" id='arr_1-add' value='+' />
+        </p>
+        <div id="arr_1-container" class="row row-cols-4 w-75">
+          <div id="arr_1-col-1" class="col">
+            <input type="text" id="arr_1-input-1" class="form-control mb-2" tabindex="1">
+          </div>
+        </div>
+      </div>
+
+      <div id="div-arr_2">
+        <p>
+          Add elements to the array
+          <input type='button' class="btn-sm btn btn-light" id='arr_2-add' value='+' />
+        </p>
+        <div id="arr_2-container" class="row row-cols-4 w-75">
+          <div id="arr_2-col-1" class="col">
+            <input type="text" id="arr_2-input-1" class="form-control mb-2" tabindex="1">
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <button class="btn btn-primary mb-3" id='add-arr'>Add a New Array</button>
+    <button class="btn btn-primary mb-3" id='generate'>Generate</button>
+
+    <div id="result"></div>
+
+  </div>
+
+</body>
+</html>

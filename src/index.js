@@ -53,7 +53,7 @@ const generateCombinations = () => {
       final_arr.push(arr);
    })
 
-   final_arr = iterNArrays(final_arr);
+   final_arr = combineNArrays(final_arr);
 
   if (final_arr.length > 0) {
     $('#result').append('<ul class="list-group">');
@@ -96,7 +96,7 @@ const handleArray = () => {
   }); 
 }
 
-const iterNArrays = (arr) => {
+const combineNArrays = (arr) => {
   // Take the first array of the input
   dummy_arr = arr.shift();
   
